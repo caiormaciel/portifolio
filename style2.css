@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.relembrar {
+    border: 2px solid #aaa;
+    border-radius: 10px;
+}
+
+#descrição {
+    font-size: 25px;
+    background-color: blueviolet;
+    color: black;
+    border-radius: 20px;
+}
+
+.legenda {
+    font-size: 20px;
+    background-color: blue;
+    color:blueviolet;
+    border-radius: 20px;
+    
+
+}
+
+main {
+    text-align: center;
+}

@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(70, 70, 190);
+    
+}
+.logo {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo:hover {
+    color: rgb(55, 55, 156);
+}
+.navegacao a {
+    font-size: 30px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .4s;
+    font-weight: 600;
+}
+
+.navegacao a:hover,
+.navegacao a.active {
+    color: rgb(55, 55, 156);
+}
+
+
+.header{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*criar espaços*/
+    z-index: 100;
+}
+
+.navegacao{
+    background-color: transparent;
+      
+}
+.imagem img {
+    height: 450px;
+    width: 400px;
+    padding-top: 0px;
+    transition: 1s;
+}
+
+.imagem img:hover {
+    padding: 5px;
+    opacity: 70%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.home{
+    display: flex;
+    flex-direction: block;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+}
+
+.home-content {
+    display: flex;
+    max-width: 650px;
+    border-radius: 10px;
+    transition: padding 1s;
+    text-align: justify;
+    min-width: 300px;
+}
+
+.home-content:hover {
+    padding: 8px;
+}
+
+.home-content h1 {
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #d2eea2
+}
+
+.text {        
+    text-align: left;
+    margin: 20px 0 40px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+.btn-box a{
+    position: relative;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #d2eea2;
+    border: 3px solid #d2eea2;;
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(41, 13, 181);
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #d2eea2;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: rgb(230, 222, 237);
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #083dc2;
+}
+
+.btn-box a:nth-child(2)::before {
+    background-color: #d2eea2;
+}
+
+.btn-box a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(70,70,190);
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.about {
+    background-color: yellowgreen;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(27, 27, 129);
+}
+
+#imagens a img {
+    max-width:250px;
+    border-radius: 50%;
+    height: 250px;
+    
+
+}
+.about h1{
+    padding-top: 80px;
+}
+#imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 100px;
+    text-align: center;
+    
+    
+}
+
+#imagens img {
+    transition: outline 0.5s, padding 0.5s;
+}
+
+#imagens img:hover {
+    outline: 10px solid rgba(82, 51, 193, 0.611);
+    padding: 10px;
+    opacity: 60%;
+    
+}
+
+#imagens p {
+    max-width: 300px;
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(34, 0, 186);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#imagens p:hover {
+    color: rgba(3, 5, 36, 0.563);
+}
+
+#imagens a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 100px;
+    
+}
+
+#color {
+    padding: 20px;
+    background-image: linear-gradient(rgb(70, 70, 190), yellowgreen);
+}
+
+
+/*
+home: tirar display: flex;
+*/
