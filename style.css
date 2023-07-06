@@ -178,7 +178,6 @@ section {
 }
 
 .about {
-    border: 1px solid red;
     background-color: yellowgreen;
     width: 100%;
     display: flex;
