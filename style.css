@@ -34,6 +34,10 @@ body {
     color: rgb(55, 55, 156);
 }
 
+.navegacao {
+    min-width: 320px;
+}
+
 
 .header{    
     position: fixed;
@@ -48,14 +52,10 @@ body {
     z-index: 100;
 }
 
-.navegacao{
-    background-color: transparent;
-      
-}
+
 .imagem img {
     height: 450px;
     width: 400px;
-    padding-top: 0px;
     transition: 1s;
 }
 
@@ -71,17 +71,19 @@ section {
 
 .home{
     display: flex;
-    flex-direction: block;
-    height: 100vh;
+    max-height: 90vh;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0 10%;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
-    justify-content: space-between;
+    justify-content: center;
 }
+ 
+
 
 .home-content {
     display: flex;
+    flex-direction: column;
     max-width: 650px;
     border-radius: 10px;
     transition: padding 1s;
@@ -175,14 +177,18 @@ section {
 }
 
 .about {
+    border: 1px solid red;
     background-color: yellowgreen;
-    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: rgb(27, 27, 129);
+
 }
+
+
 
 #imagens a img {
     max-width:250px;
@@ -192,16 +198,18 @@ section {
 
 }
 .about h1{
-    padding-top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 250px;
+    text-align: center;
+
 }
 #imagens {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
     padding-top: 100px;
-    text-align: center;
-    
-    
+    text-align: center;    
 }
 
 #imagens img {
@@ -238,7 +246,7 @@ footer {
 }
 
 #color {
-    padding: 20px;
+    padding: 50px;
     background-image: linear-gradient(rgb(70, 70, 190), yellowgreen);
 }
 
@@ -246,3 +254,18 @@ footer {
 /*
 home: tirar display: flex;
 */
+
+@media screen and (max-width: 1050px) {
+    .home-content {
+        
+        padding-top: 100px;
+        align-items: center;
+        text-align: center;
+        margin: 0 0 0 2px;
+    }
+    .header {
+        min-width: 400px;
+    }
+    
+    
+}
