@@ -71,12 +71,13 @@ section {
 
 .home{
     display: flex;
-    max-height: 90vh;
+    height: 90vh;
     flex-wrap: wrap;
     align-items: center;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
     justify-content: center;
+
 }
  
 
@@ -200,7 +201,7 @@ section {
 .about h1{
     box-sizing: border-box;
     display: flex;
-    padding-top: 250px;
+    
     text-align: center;
 
 }
@@ -266,6 +267,18 @@ home: tirar display: flex;
     .header {
         min-width: 400px;
     }
+
+    .about h1 {
+        padding-top: 250px;
+    }
     
-    
+    #imagens .img1 a {
+        align-items: center;   
+}
+    #imagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+}
 }
