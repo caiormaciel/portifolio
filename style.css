@@ -255,7 +255,7 @@ footer {
 home: tirar display: flex;
 */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 800px) {
     .home-content {
         
         padding-top: 100px;
