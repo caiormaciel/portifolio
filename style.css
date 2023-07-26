@@ -2,26 +2,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Benne', serif;
 }
 
 body {
-    background-color: rgb(70, 70, 190);
+   /* background-color: rgb(0, 0, 0);
+    */
+    background-image: url(img4.jpg);
     
+    background-size: contain;
 }
 .logo {
     color: white;
+    opacity: 0.7;
     font-size: 25px;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.5s;
 }
 
 .logo:hover {
-    color: rgb(55, 55, 156);
+    color: rgb(255, 255, 255);
+    opacity: 1;
 }
 .navegacao a {
     font-size: 30px;
     color: #ededed;
+    opacity: 0.7;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -31,21 +38,24 @@ body {
 
 .navegacao a:hover,
 .navegacao a.active {
-    color: rgb(55, 55, 156);
+    color: rgb(255, 255, 255);
+    opacity: 1;
 }
 
 .navegacao {
+    
     min-width: 320px;
 }
 
 
 .header{    
+    box-shadow: 0px 0px 10px 3px goldenrod;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background-color: yellowgreen;
+    background-color: rgba(65, 64, 65, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-between; /*criar espaços*/
@@ -75,6 +85,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     color: whitesmoke;
+    opacity: 0.9;
     font-family: 'Courier New', Courier, monospace;
     justify-content: center;
 
@@ -105,7 +116,7 @@ section {
 .home-content h3 {
     font-size: 29px;
     font-weight: 700;
-    color: #d2eea2
+    color: goldenrod;
 }
 
 .text {        
@@ -117,6 +128,7 @@ section {
 }
 
 .btn-box {
+    
     display: flex;
     justify-content: space-between;
     width: 320px;
@@ -133,11 +145,11 @@ section {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #d2eea2;
-    border: 3px solid #d2eea2;;
+    background: rgba(108, 107, 103, 0.307);
+    border: 1px solid #585858;;
     border-radius: 8px;
     font-size: 19px;
-    color: rgb(41, 13, 181);
+    color: rgb(222, 222, 222);
     text-decoration: none;
     letter-spacing: 1px;
     z-index: 1;
@@ -146,30 +158,33 @@ section {
 }
 
 .btn-box a:hover {
-    color: #d2eea2;
+    color: white;
+    box-shadow: 0px 0px 10px 3px goldenrod;
+    
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: rgb(230, 222, 237);
+    color: rgb(255, 255, 255);
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #083dc2;
+    color: #000000;
 }
 
 .btn-box a:nth-child(2)::before {
-    background-color: #d2eea2;
+    background-color: gold;
 }
 
 .btn-box a::before {
     content: "";
     position: absolute;
+    border: goldenrod;
     top: 0;
     left: 0;
     width: 0%;
     height: 100%;
-    background: rgb(70,70,190);
+    background: black;
     z-index: -1;
     transition: .5s;
 }
@@ -178,13 +193,13 @@ section {
 }
 
 .about {
-    background-color: yellowgreen;
+   /* background-color: yellowgreen;*/
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(27, 27, 129);
+    color: rgb(186, 176, 1);
 
 }
 
@@ -200,7 +215,6 @@ section {
 .about h1{
     box-sizing: border-box;
     display: flex;
-    
     text-align: center;
 
 }
@@ -209,31 +223,36 @@ section {
     flex-wrap: wrap;
     gap: 100px;
     padding-top: 100px;
-    text-align: center;    
+    text-align: center;
+       
 }
 
 #imagens img {
+    box-shadow: 0px 0px 20px 1px rgba(226, 164, 7, 0.445); 
     transition: outline 0.5s, padding 0.5s;
+    opacity: 70%;
 }
 
 #imagens img:hover {
-    outline: 10px solid rgba(82, 51, 193, 0.611);
-    padding: 10px;
-    opacity: 60%;
+    outline: 1px solid rgb(186, 176, 1, 0.611);
+    padding: 3px;
+    opacity: 1;
+    transition: opacity 0.5s;
     
 }
 
 #imagens p {
+    font-size: 18px;
     max-width: 300px;
     text-align: center;
     padding-top: 40px;
-    color: rgb(34, 0, 186);
+    color: rgb(159, 159, 159);;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 #imagens p:hover {
-    color: rgba(3, 5, 36, 0.563);
+    color: rgb(255, 255, 255);
 }
 
 #imagens a {
@@ -274,6 +293,9 @@ home: tirar display: flex;
     #imagens .img1 a {
         align-items: center;   
 }
+    .text{
+        text-align: justify;
+    }
     #imagens {
         display: flex;
         flex-direction: column;
