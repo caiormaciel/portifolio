@@ -267,11 +267,6 @@ footer {
     background-image: linear-gradient(rgb(70, 70, 190), yellowgreen);
 }
 
-
-/*
-home: tirar display: flex;
-*/
-
 @media screen and (max-width: 800px) {
     .home-content {
         
