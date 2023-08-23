@@ -2,16 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Benne', serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-    background-image: url(img4.jpg);
-    
-    background-size: contain;
+    width: 100vw;
 }
+
+
 .logo {
-    color: white;
+    color: rgb(141, 141, 141);
     opacity: 0.7;
     font-size: 25px;
     text-decoration: none;
@@ -20,12 +20,12 @@ body {
 }
 
 .logo:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(46, 46, 46);
     opacity: 1;
 }
 .navegacao a {
     font-size: 30px;
-    color: #ededed;
+    color: #904100;
     opacity: 0.7;
     text-decoration: none;
     font-weight: 500;
@@ -36,7 +36,7 @@ body {
 
 .navegacao a:hover,
 .navegacao a.active {
-    color: rgb(255, 255, 255);
+    color: rgb(67, 35, 0);
     opacity: 1;
 }
 
@@ -47,119 +47,144 @@ body {
 
 
 .header{    
-    box-shadow: 0px 0px 10px 3px goldenrod;
+    box-shadow: 0px 0px 10px 3px rgb(138, 138, 138);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background-color: rgba(65, 64, 65, 0.5);
+    background-color: rgba(201, 183, 166, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-between; /*criar espaços*/
     z-index: 100;
 }
 
-section {
+
+.page1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background-image: url(01.jpg);
+    background-size: cover;
+}
+
+.page1 .first-page h1 {
+    font-size: 40px;
+    color: rgb(171, 121, 4);
+
+}
+
+.page1 .first-page h3 {
+    text-align: center;
+    color: #723a02;
+    font-size: 25px;
+    margin-bottom: 150px;
+    
+}
+
+.page1 .first-page .icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+    color: #a95200;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
+.page2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    padding-right: 30px;
+    justify-content: flex-end;
+    background-image: url(02.jpg);
+    background-size: cover;
+    height: 120vh;
 }
-
-.home{
+.page3 {
     display: flex;
-    height: 90vh;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    color: whitesmoke;
-    opacity: 0.9;
-    font-family: 'Courier New', Courier, monospace;
     justify-content: center;
-
+    background-image: url(03.jpg);
+    background-size: cover;
+    height: 120vh;
 }
- 
+
 
 
 .home-content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 650px;
-    border-radius: 10px;
-    transition: padding 1s;
-    text-align: justify;
+    text-align:justify;
     min-width: 300px;
 }
-
-.home-content h1 {
-    text-align: center;
-    font-size: 41px;
-    font-weight: 700;
-    line-height: 1.2;
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-.home-content h3 {
-    text-align: center;
-    font-size: 29px;
-    font-weight: 700;
-    color: goldenrod;
+.page2 div h3 {
+    width: 800px;
+    color: rgb(4, 3, 3);
+    font-size: 18px;
+    
+
 }
 
-.text {        
-    text-align: justify;
-    margin: 20px 0 40px;
-    color: whitesmoke;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-}
 
 .btn-box {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
-    width: 320px;
+    justify-content:flex-end;
+    gap: 10px;
+    width: 100vw;
     height: 35px;
     text-align: center;
-    padding-top: 8px;
+    margin: 100px 0px 100px 0px;
+
 }
 
 
 .btn-box a{
     position: relative;
     display: inline;
-    justify-content: center;
-    align-items: center;
     width: 150px;
-    height: 100%;
-    background: rgba(108, 107, 103, 0.307);
-    border: 1px solid #585858;;
-    border-radius: 8px;
-    font-size: 19px;
-    color: rgb(222, 222, 222);
+    background: rgba(237, 185, 95, 0.307);
+    border: 1px solid #a95200;;
+    border-radius: 15px;
+    font-size: 19px; 
+    color: rgb(12, 12, 12);
     text-decoration: none;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.8s;
 }
 
 .btn-box a:hover {
     
-    color: white;
-    box-shadow: 0px 0px 10px 3px goldenrod;
+    color: wheat;
+    box-shadow: 0px 0px 10px 3px rgb(244, 193, 139);
     
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 .btn-box a:nth-child(2)::before {
-    background-color: gold;
+    background-color: rgb(222, 177, 108);
 }
 
 .btn-box a::before {
@@ -178,115 +203,9 @@ section {
     width: 100%;
 }
 
-.about {
-   /* background-color: yellowgreen;*/
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(186, 176, 1);
-
-}
-
-
-
-#imagens a img {
-    max-width:250px;
-    border-radius: 50%;
-    height: 250px;
-    
-
-}
-.about h1{
-    box-sizing: border-box;
-    display: flex;
-    text-align: center;
-
-}
-#imagens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    padding-top: 100px;
-    text-align: center;
-       
-}
-
-#imagens img {
-    box-shadow: 0px 0px 20px 10px rgba(226, 164, 7, 0.445); 
-    transition: padding 1s, opacity 1s, background 1s;
-    opacity: 0.7;
-}
-
-#imagens img:hover {
-    padding: 3px;
-    background-color: rgba(186, 177, 1, 0.348);
-    opacity: 0.9;
-    
-    
-}
-
-#imagens p {
-    font-size: 18px;
-    max-width: 300px;
-    text-align: center;
-    padding-top: 40px;
-    color: rgb(159, 159, 159);;
-    text-decoration: none;
-    transition: color 0.8s;
-}
-
-#imagens p:hover {
-    color: rgb(255, 255, 255);
-}
-
-#imagens a {
-    text-decoration: none;
-}
-
 footer {
-    margin-top: 100px;
-    
-}
-
-#color {
-    padding: 50px;
-    background-image: linear-gradient(rgb(70, 70, 190), yellowgreen);
-}
-
-@media screen and (max-width: 800px) {
-    .home-content {
-        
-        padding-top: 100px;
-        align-items: center;
-        text-align: center;
-        margin: 0 0 0 2px;
-    }
-    .header {
-        min-width: 400px;
-    }
-
-    .about h1 {
-        padding-top: 250px;
-    }
-    
-    #imagens .img1 a {
-        align-items: center;   
-}
-
-    .home-content h1,h3{
-        margin: 0px 10px 0px 10px;
-    }
-    .text{
-        text-align: justify;
-        margin: 0px 20px 0px 10px;
-        
-    }
-    #imagens {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-}
+ background-image: url(03.jpg);
+ background-size: cover;
+ text-align: center;
+ color: black;
 }
